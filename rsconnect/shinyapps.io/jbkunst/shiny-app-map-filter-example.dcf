@@ -1,0 +1,12 @@
+name: shiny-app-map-filter-example
+title: shiny-app-map-filter-example
+username: jbkunst
+account: jbkunst
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10504047
+bundleId: 7921413
+url: https://jbkunst.shinyapps.io/shiny-app-map-filter-example/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
