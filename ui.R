@@ -22,23 +22,28 @@ page_navbar(
         leafletOutput("mapa")
         ),
       layout_columns(
-        col_widths = 6,
-        value_box(
-          title = "Puntos en el mapa",
-          value = textOutput("number"),
-          showcase = bs_icon("hash"),
-          theme_color = "light"
+        col_widths = 12,
+        layout_columns(
+          col_widths = 6,
+          value_box(
+            title = "Puntos en el mapa",
+            value = textOutput("number"),
+            showcase = bs_icon("hash"),
+            theme_color = "light"
           ),
-        x,
-        x,
-        x,
-        x,
-        x,
-        x,
-        x
+          x,
+          x,
+          x),
+        layout_columns(
+          col_widths = 12,
+          card(
+            highchartOutput("chart"),
+            full_screen = TRUE
+            )
+          )
         )
-      ) 
-    )
+      )
+    ) 
   )
 
   
